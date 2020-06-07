@@ -114,7 +114,14 @@ Given I have done this on my UBUNTU laptop with 2 cores, my NANO and now this XA
 
 Enjoy! .. GTC 2020 was like May 15, 16 days later, I am able to see this and from Singapore. Without much training.  Perhaps, my unix is abit rusty. But was able to move my 256GB MicroSD card and salvage a number of pieces of hardware from my tool box.
 
-Cheers.  And if I am 55 years old and can do this, any younger person MUST be able to do better than me =)
+# Mask or No Mask
+
+Tensorflow 2.1 doesn't come prebuilt on NX. However, it is easy to install.  I wanted to see how it reacts to both 
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=EnPb01ldcHQ" target="_blank">
+  <img src="http://img.youtube.com/vi/EnPb01ldcHQ/0.jpg" alt="Mask or No Mask" width="640" height="480" border="0" /></a>
+
+
 
 # Afterthoughts:
 
