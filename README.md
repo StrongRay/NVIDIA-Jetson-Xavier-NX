@@ -116,7 +116,11 @@ Enjoy! .. GTC 2020 was like May 15, 16 days later, I am able to see this and fro
 
 # Mask or No Mask
 
-Tensorflow 2.1 doesn't come prebuilt on NX. However, it is easy to install.  I wanted to see how it reacts to both 
+Tensorflow 2.1 doesn't come prebuilt on NX. However, it is easy to install.  I wanted to see how it reacts to both Training using GPU as well as how easy it is to add other stuff besides Tensorflow like PyTorch.  There were two explorations and below showed one using Torch and TorchVision (which is quite challenging to get it running on Xavier). Even so, the speed was too slow.
+
+![alt text](https://github.com/StrongRay/NVIDIA-Jetson-Xavier-NX/blob/master/Face-4-label.png "Multi Face Detect")
+
+So I hunted down a code set that purely uses Tensorflow.  Surprisingly, with some changes to CV2, I managed to get this working off the attached camera. Will put some links here later to explain what I did. 
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=EnPb01ldcHQ" target="_blank">
   <img src="http://img.youtube.com/vi/EnPb01ldcHQ/0.jpg" alt="Mask or No Mask" width="640" height="480" border="0" /></a>
