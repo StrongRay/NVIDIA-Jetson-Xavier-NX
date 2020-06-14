@@ -133,8 +133,29 @@ In the light of trying more stuff out on my NVIDIA Xavier NX, I downloaded a set
 
 Hit an initial problem and I thought i HAD to go CONDA. Yet, twigged around and found that I could install Pytorch Lightning.  Here's the screen shots of the training and the tensorboard graphs
 
+![alt text](https://github.com/StrongRay/NVIDIA-Jetson-Xavier-NX/blob/master/Training-1.png)
+![alt text](https://github.com/StrongRay/NVIDIA-Jetson-Xavier-NX/blob/master/Train-TensorBoard.png)
 
+So overfitting really occurred at EPOCH 6.  But this is not the point.
+The power is this unit.  I am using this device to train ( which would otherwise have to be done via GOOGLE CLOUD or AMAZON and it also means, you end up paying for the time you spend training on CLOUD )
 
+Next exploration is to use the generated weights and see if the speed is fast on the attached camera on a LIVE video feed.
+
+Like AUTOML, with time, software gets easier but no software can automate data prep and one can blindly follow. 
+
+As a learning today, I chanced upon a TED talk by Josh Kaufman (video below) and got really inspired. The gist of the video is to say you can learn anything in 20 hours.  But if you have a foundation, it makes it easier to latch on new skills. 
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=5MgBikgcWnY" target="_blank">
+  <img src="http://img.youtube.com/vi/5MgBikgcWnY/0.jpg" alt="20 Hours" width="640" height="480" border="0" /></a>
+
+The 4 steps to quick Learning are as follows
+
+> 1) Deconstruct any Skill (much like WBS in project management)
+> 2) Learn enough to **self** correct
+> 3) Remove barriers of Practice (eg: distraction and "emotional" rather than "intellectual")
+> 4) Practice at least 20 hours
+
+We don't need 10,000 hours to be an expert.  We just need 20 hours to learn something well enough.  This meant an hour daily for 3 weeks.  As I looked back, I mastered Cross System Product (CSP/AD) which in the 90s was a Mainframe code generator and taught classes on it.  Then, its the same. Focus on something you love and you can be the best. Language changed.  RPA was then ELLAPI in the old days. Syntax might change but the concept remains the same. 
 
 # Afterthoughts:
 
