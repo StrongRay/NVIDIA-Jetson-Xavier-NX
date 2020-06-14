@@ -125,6 +125,15 @@ So I hunted down a code set that purely uses Tensorflow.  Surprisingly, with som
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=EnPb01ldcHQ" target="_blank">
   <img src="http://img.youtube.com/vi/EnPb01ldcHQ/0.jpg" alt="Mask or No Mask" width="640" height="480" border="0" /></a>
 
+# Pytorch LIGHTNING ..
+
+https://pytorch-lightning.readthedocs.io/en/latest/introduction_guide.html
+
+In the light of trying more stuff out on my NVIDIA Xavier NX, I downloaded a set of Pytorch codes and also gotten the Real World Mask Data from China - https://github.com/X-zhangyang/Real-World-Masked-Face-Dataset
+
+Hit an initial problem and I thought i HAD to go CONDA. Yet, twigged around and found that I could install Pytorch Lightning.  Here's the screen shots of the training and the tensorboard graphs
+
+
 
 
 # Afterthoughts:
