@@ -139,7 +139,12 @@ Hit an initial problem and I thought i HAD to go CONDA. Yet, twigged around and 
 So overfitting really occurred at EPOCH 6.  But this is not the point.
 The power is this unit.  I am using this device to train ( which would otherwise have to be done via GOOGLE CLOUD or AMAZON and it also means, you end up paying for the time you spend training on CLOUD )
 
-Next exploration is to use the generated weights and see if the speed is fast on the attached camera on a LIVE video feed.
+Tested the generated weights against a video feed. It's a two step process, but not efficient. Detect faces 1st, then use faces to detect if there is a mask. Getting CHINESE characters onto CV2 on a Xavier. Can be done but it's an image overlay via PIL.  Here's what you can see:
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=h8g1X5hgSdY" target="_blank">
+  <img src="http://img.youtube.com/vi/h8g1X5hgSdY/0.jpg" alt="20 Hours" width="640" height="480" border="0" /></a>
+
+Reducing the threshold for detecting faces resulted in more 'non-faces' but seemed to pick up more faces.
 
 Like AUTOML, with time, software gets easier but no software can automate data prep and one can blindly follow. 
 
