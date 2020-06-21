@@ -150,8 +150,8 @@ Reducing the threshold for detecting faces resulted in more 'non-faces' but seem
 
 One thing leading to another.  Facial Landmarks are a way to detect points of the faces. This is no magic.  So whoever tries to con and tell you his/her company is able to detect emotions and you are going to buy that company for 10s of millions is really dumb.  There is "ready made" software.  But like all software, it challenges the basic.  And I returned back numpy.ndarray to Datacamp =) so, it took me awhile to look at the codes, test out in Python COMMAND prompt.  Key, is not only about reading codes, but to know what to change and how to change.  
 
-1.  So the sample from mtcn-face-extraction doesn't give boundary boxes for Advanced MTCNN.  There is no point seeing number of images detected without looking at the frame.  You will need **facenet_pytorch**
-2.  You will need **mtcnn** for the basic example. Simple stuff always fail like **pip3 install mtcnn** complaining you need python-opencv-4.1. You will need some creative way to bypass the check on python-opencv4 [By the way, building cv2 from source v 4.3 is done easily with a make -j6 ! so I have proven cv2 version 4.3 can work on NVIDIA Jetson Xavier]
+1.  So the sample from mtcn-face-extraction [https://github.com/JustinGuese/mtcnn-face-extraction-eyes-mouth-nose-and-speeding-it-up/blob/master/MTCNN%20example.ipynb] doesn't give boundary boxes for Advanced MTCNN.  There is no point seeing number of images detected without looking at the frame.  You will need **facenet_pytorch**
+2.  You will need **mtcnn** for the basic example. Simple stuff always fail like **pip3 install mtcnn** complaining you need python-opencv-4.1. You will need some creative way to bypass the check on python-opencv4 [By the way, building cv2 from source v 4.3 is done easily with a make -j**6** don't forget you have 6 cores to complie ! so I have proven cv2 version 4.3 can work on NVIDIA Jetson Xavier]
 3.  Images Scaling Resize changed to 1 and wola .. boxes fall in place.
 ```
 fast_mtcnn = FastMTCNN(
