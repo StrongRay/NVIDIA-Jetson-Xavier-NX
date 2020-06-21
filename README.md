@@ -146,7 +146,38 @@ Tested the generated weights against a video feed. It's a two step process, but 
 
 Reducing the threshold for detecting faces resulted in more 'non-faces' but seemed to pick up more faces.
 
+# MTCNN - aka Face landmarks detection
+
+One thing leading to another.  Facial Landmarks are a way to detect points of the faces. This is no magic.  So whoever tries to con and tell you his/her company is able to detect emotions and you are going to buy that company for 10s of millions is really dumb.  There is "ready made" software.  But like all software, it challenges the basic.  And I returned back numpy.ndarray to Datacamp =) so, it took me awhile to look at the codes, test out in Python COMMAND prompt.  Key, is not only about reading codes, but to know what to change and how to change.  
+
+1.  So the sample from mtcn-face-extraction doesn't give boundary boxes for Advanced MTCNN.  There is no point seeing number of images detected without looking at the frame.  You will need **facenet_pytorch**
+2.  You will need **mtcnn** for the basic example. Simple stuff always fail like **pip3 install mtcnn** complaining you need python-opencv-4.1. You will need some creative way to bypass the check on python-opencv4 [By the way, building cv2 from source v 4.3 is done easily with a make -j6 ! so I have proven cv2 version 4.3 can work on NVIDIA Jetson Xavier]
+3.  Images Scaling Resize changed to 1 and wola .. boxes fall in place.
+```
+fast_mtcnn = FastMTCNN(
+    stride=4,
+    resize=1,
+    margin=14,
+    factor=0.6,
+    keep_all=True,
+    device=device
+)
+```
+Here's the nice outcome:
+
+## Basic MTCNN
+
+![alt text](https://github.com/StrongRay/NVIDIA-Jetson-Xavier-NX/blob/master/Basic-Face-4.png)
+
+## Advanced MTCNN
+
+![alt text](https://github.com/StrongRay/NVIDIA-Jetson-Xavier-NX/blob/master/Advanced-Face-4.png)
+
+Alot alot more faces are detected than the initial exploration.  **Learn enough to self correct**
+
 Like AUTOML, with time, software gets easier but no software can automate data prep and one can blindly follow. 
+
+# Quick Learning 
 
 As a learning today, I chanced upon a TED talk by Josh Kaufman (video below) and got really inspired. The gist of the video is to say you can learn anything in 20 hours.  But if you have a foundation, it makes it easier to latch on new skills. 
 
