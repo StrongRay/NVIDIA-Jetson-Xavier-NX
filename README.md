@@ -173,7 +173,9 @@ Here's the nice outcome:
 
 ![alt text](https://github.com/StrongRay/NVIDIA-Jetson-Xavier-NX/blob/master/Advanced-Face-4.png)
 
-Alot alot more faces are detected than the initial exploration.  **Learn enough to self correct**
+Alot alot more faces are detected than the initial exploration.  I forgot to mention "Frames per second: **0.197**, faces detected: 18" - 18 faces detected in 0.197 second. WOW! What a piece of hardware. Got to combine this to the mask/no mask and stream it through a video to see the latency. 
+
+**Learn enough to self correct**
 
 Like AUTOML, with time, software gets easier but no software can automate data prep and one can blindly follow. 
 
