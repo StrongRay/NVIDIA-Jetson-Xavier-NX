@@ -175,6 +175,17 @@ Here's the nice outcome:
 
 Alot alot more faces are detected than the initial exploration.  I forgot to mention "Frames per second: **0.197**, faces detected: 18" - 18 faces detected in 0.197 second. WOW! What a piece of hardware. Got to combine this to the mask/no mask and stream it through a video to see the latency. 
 
+Processed more files.  Here's the impressive face detection.
+
+![alt text](https://github.com/StrongRay/NVIDIA-Jetson-Xavier-NX/blob/master/crowd-1-1.png)
+![alt text](https://github.com/StrongRay/NVIDIA-Jetson-Xavier-NX/blob/master/crowd-2.png)
+![alt text](https://github.com/StrongRay/NVIDIA-Jetson-Xavier-NX/blob/master/crowd-3.png)
+![alt text](https://github.com/StrongRay/NVIDIA-Jetson-Xavier-NX/blob/master/crowd-4.png)
+
+And the source code:
+
+https://github.com/StrongRay/NVIDIA-Jetson-Xavier-NX/blob/master/advance-mtcnn.py
+
 **Learn enough to self correct**
 
 Like AUTOML, with time, software gets easier but no software can automate data prep and one can blindly follow. 
